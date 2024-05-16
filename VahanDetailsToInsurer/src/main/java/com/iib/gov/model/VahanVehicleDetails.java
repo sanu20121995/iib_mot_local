@@ -17,7 +17,7 @@ import com.fasterxml.jackson.annotation.JsonRootName;
 
 
 @Entity
-@Table(name="NIC_VAHAN_DATA_20230209_2")
+@Table(name="NIC_VAHAN_DATA_latest")
 
 //@JsonPropertyOrder (value = {"Owner_Serial_No","Hypothecation_Name","Registration_Number","Date_of_Registration","Chassis_Number"
 //		,"Year_of_Manufacture","Engine_Number","Tax_From","Tax_Up_to","Manufacturer_of_the_Vehicle","Fitness_Up_to_Validity","Model_Variant_of_the_Vehicle"

@@ -8,6 +8,8 @@ public interface VahanVehicleDetailsServiceI {
 
 public  VahanVehicleDetails	getDetailsByregno(String regNo);
 
+public VahanVehicleDetails getDetailsBySpecificregno(String regno1, String regno2);
+
 public VahanVehicleDetails getDetailsBychassisno(String chassisno);
 
 

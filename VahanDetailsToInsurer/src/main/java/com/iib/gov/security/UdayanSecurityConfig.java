@@ -186,12 +186,29 @@ public class UdayanSecurityConfig extends WebSecurityConfigurerAdapter{
 					//.roles("USERs")
 					)
 			.withUser(
-					User.withUsername("120189")
-					.password(encoder().encode("TIVS06"))
+					User.withUsername("019078")
+					.password(encoder().encode("TGIV206"))
 					//.password("{noop}sanu1234")
 					.authorities("ROLE_USER")
 					//.roles("USER")
 					)
+			
+//			.withUser(
+//					User.withUsername("120189")
+//					.password(encoder().encode("TIVS06"))
+//					//.password("{noop}sanu1234")
+//					.authorities("ROLE_USER")
+//					//.roles("USER")
+//					)
+//			
+			
+//			.withUser(
+//					User.withUsername("120189")
+//					.password(encoder().encode("TIVS06"))
+//					//.password("{noop}sanu1234")
+//					.authorities("ROLE_USER")
+//					//.roles("USER")
+//					)
 			
 			.withUser(
 					User.withUsername("120167")
@@ -253,7 +270,7 @@ public class UdayanSecurityConfig extends WebSecurityConfigurerAdapter{
        .formLogin() 
         .and()
         .httpBasic().authenticationEntryPoint(authenicatedEntryPoint);
-    //   http.sessionManagement().sessionCreationPolicy(SessionCreationPolicy.NEVER);
+       http.sessionManagement().sessionCreationPolicy(SessionCreationPolicy.NEVER);
 //       
        ////////////////////////////
 	

@@ -1,13 +1,11 @@
 package com.iib.main.controller;
 
-import java.io.File;
-import java.io.FileInputStream;
+
+
 import java.io.FileWriter;
 import java.io.IOException;
-import java.io.InputStream;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.Date;
 import java.util.HashSet;
@@ -20,17 +18,14 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.google.gson.Gson;
+import com.iib.main.entity.File;
 import com.iib.main.entity.IibappUploadfile;
 import com.iib.main.entity.PolicyRequestpojo;
 import com.iib.main.entity.Policydetails;
 import com.iib.main.exception.CustomException;
 import com.iib.main.repository.FileRepository;
 import com.iib.main.service.PolicyService;
-import com.jcraft.jsch.Channel;
-import com.jcraft.jsch.ChannelSftp;
-import com.jcraft.jsch.JSch;
 import com.jcraft.jsch.JSchException;
-import com.jcraft.jsch.Session;
 import com.jcraft.jsch.SftpException;
 
 @RestController
@@ -433,7 +428,7 @@ public class TestController_policy {
 		System.out.println(filename1 + "***************************");
 
 		// creating file and filename
-		 File file1 = new File("/home/ewa/ewa/iib-poc/media/uploads/" + filename1);
+		// File file1 = new File("/home/ewa/ewa/iib-poc/media/uploads/" + filename1);
 		//File file1 = new File("D:/tp_claimsfiles" + filename1);
 		 
 		 List<String> statuslist = service.getStatus(filename1);
@@ -560,7 +555,7 @@ public class TestController_policy {
 		// filedetails.setFailedreason();
 		filedetails.setProcessedon(LocalDateTime.now().toString());
 		filedetails.setInsurerid(insurerid);
-		filedetails.setUploadedbyuserid(7396);
+		filedetails.setUploadedbyuserid(5608);
 
 		// filedetails.setProcessrecords(0);
 		// filedetails.setSuccessrecords(0);
